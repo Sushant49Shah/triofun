@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    backdrop-filter: blur(5px);
+}
+header{
+    
+    display: flex;
+    justify-content: space-between;
+}
+.main-title{
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.turn-move{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #254975;
+    border-radius: 10px;
+}
+.turn-move > div{
+    padding: 20px 50px;
+    font-size: 24px;
+    color: white;
+}
+.turn-active{
+    transition: all 0.3s ease-in-out;
+    background: #254975;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px 0;
+}
+.boxes > div{
+    width: 150px;
+    height: 150px;
+    border: 5px solid #fff;
+}
+/* removing the borders from div  */
+.boxes > div:nth-child(1),.boxes > div:nth-child(2),.boxes > div:nth-child(3){
+    border-top-width: 0;
+}
+.boxes > div:nth-child(1),.boxes > div:nth-child(4),.boxes > div:nth-child(7){
+    border-left-width: 0;
+}
+.boxes > div:nth-child(7),.boxes > div:nth-child(8),.boxes > div:nth-child(9){
+    border-bottom-width: 0;
+}
+.boxes > div:nth-child(3),.boxes > div:nth-child(6),.boxes > div:nth-child(9){
+    border-right-width: 0;
+}
+
+.cross{
+    background-image: url(./images/cross.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 125px;
+}
+.aalu{
+    background-image: url(./images/aalu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 125px;
+}
+.restart-btn{
+    padding: 15px 30px;
+    border: none;
+    outline: none;
+    background: rgb(139, 139, 209);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+footer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#turn{
+    width: 100px;
+    height: 100px;
+}
+
+span{
+    padding: 20px 60px;
+    font-size: 30px;
+    background-color: azure;
+    position: absolute;
+    right: 7vw;
+    visibility: hidden;
+    display: none;
+}
+.gif{
+    position: absolute;
+    right: 7vw;
+    width: 0;
+}
+.gif2{
+    position: absolute;
+    top: 20%;
+    left: 10vw;
+    width: 0;
+}
+.drawgif{
+    position: absolute;
+    top: 30%;
+    left: 10vw;
+    width: 0;
+}

@@ -1,0 +1,7 @@
+GAME CENTER
+2. add Neumorphsim eeffects
+
+hangman - object use
+{
+    'WORD' : "description sthg"
+}
